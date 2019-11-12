@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1, h2, h3, p{
+    margin: 0px;
+}
+h1, h2, h3{
+    color: #585858;
+}
+p{
+    color: #424242;
+    font-size: 1.05em;
+    margin: 7px 0px 7px 0px;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.left{
+    flex-basis: 37%;
+    background-image: url('../img/ulugbek.jpg');
+    background-repeat: no-repeat;  
+    background-size: cover;
+    height: 100vh;
+}
+.right{
+    flex-basis: 63%;
+    display: flex;
+}
+.info{
+    padding: 30px;
+}
+.tech{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tech img{
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px 5px 0px;
+}
+@media only screen and (max-width: 700px) {
+    .left{
+        display: none;
+    }
+    .right{
+        flex-basis: 100%;
+    }
+}
